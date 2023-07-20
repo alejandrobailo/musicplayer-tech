@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background: url('./public/assets/background/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+
+  .description {
+    color: #fff;
+  }
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0;
+}

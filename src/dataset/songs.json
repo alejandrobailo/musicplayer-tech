@@ -1,0 +1,52 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "name": "Sake Bomb",
+      "artist": "Tab",
+      "likes": 20,
+      "audio": "sake bomb.mp3",
+      "img": "sake bomb.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Alone",
+      "artist": "Color out",
+      "likes": 42,
+      "audio": "alone.mp3",
+      "img": "alone.jpg"
+    },
+    {
+      "id": 3,
+      "name": "The Deep",
+      "artist": "Anitek",
+      "likes": 12,
+      "audio": "the deep.mp3",
+      "img": "the deep.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Work N' Play",
+      "artist": "Samie Bower",
+      "likes": 280,
+      "audio": "work n play.mp3",
+      "img": "work n play.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Molotov Heart",
+      "artist": "Radio Nowhere",
+      "likes": 85,
+      "audio": "molotov heart.mp3",
+      "img": "molotov heart.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Who Called Who",
+      "artist": "Samie Bower",
+      "likes": 22,
+      "audio": "who called who.mp3",
+      "img": "who called who.jpg"
+    }
+  ]
+}
