@@ -1,5 +1,6 @@
 import Song from '../Song/Song';
 import { SongI } from '../../store/PlayerStore';
+import { SongListContainer } from './SongList.styles';
 
 interface Props {
   songs: SongI[];
@@ -8,7 +9,7 @@ interface Props {
 const SongList = ({ songs }: Props) => {
   return (
     <>
-      <div>
+      <SongListContainer>
         {songs.map((song) => (
           <Song
             key={song.id}
@@ -21,7 +22,7 @@ const SongList = ({ songs }: Props) => {
             id={song.id}
           />
         ))}
-      </div>
+      </SongListContainer>
     </>
   );
 };

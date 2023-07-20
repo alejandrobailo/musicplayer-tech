@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const NowPlayingBox = styled.div`
+export const NowPlayingBox = styled.div<{ isHovered: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,6 +15,11 @@ export const NowPlayingBox = styled.div`
   border: 1px solid #ccc;
   background-color: #fff;
   opacity: 0.9;
+  height: 80px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  height: ${({ isHovered }) => (isHovered ? '200px' : '70px')};
 `;
 
 export const CurrentSong = styled.div`

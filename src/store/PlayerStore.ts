@@ -22,10 +22,10 @@ const mockedSong: SongI = {
 
 interface State {
   currentSong: SongI;
-  setPlaying: (song: SongI) => void;
+  setPlaying: (song: SongI, playing: boolean) => void;
 }
 
 export const useStore = create<State>((set) => ({
   currentSong: mockedSong,
-  setPlaying: (song) => set({ currentSong: { ...song, playing: true } }),
+  setPlaying: (song, playing) => set({ currentSong: { ...song, playing: playing } }),
 }));

@@ -1,10 +1,11 @@
 import usePlayer from '../../hooks/usePlayer';
 import { CurrentSong, CustomH2, CustomParagraph, NowPlayingBox } from './NowPlaying.styles';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const NowPlaying = () => {
   const { currentSong } = usePlayer();
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     if (audioRef.current) {
@@ -22,7 +23,11 @@ const NowPlaying = () => {
   }
 
   return (
-    <NowPlayingBox>
+    <NowPlayingBox
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      isHovered={isHovered}
+    >
       <CustomH2>Now Playing</CustomH2>
       <CurrentSong>
         <img

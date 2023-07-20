@@ -49,7 +49,11 @@ const App = () => {
   );
 
   if (!songs.length) {
-    return <CircularProgress sx={{ margin: '5rem auto' }} size={200} />;
+    return (
+      <div className="container">
+        <CircularProgress sx={{ color: 'white' }} size={200} />
+      </div>
+    );
   }
 
   return (

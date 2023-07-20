@@ -9,8 +9,9 @@ export const SongCard = styled.div`
   opacity: 0.9;
   border-radius: 0.625rem;
   padding: 0.125rem 0.5rem 0.125rem 0.125rem;
-  max-width: 44rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  width: 44rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-width: 320px;
 
   img {
     border-radius: 0.625rem;
@@ -20,6 +21,15 @@ export const SongCard = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    box-shadow: none;
+    justify-content: space-between;
   }
 `;
 
@@ -46,6 +56,10 @@ export const Name = styled.h3`
   color: #333;
   margin: 0;
   font-size: 1.125rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Artist = styled.p`
@@ -53,4 +67,8 @@ export const Artist = styled.p`
   margin: 0;
   text-transform: uppercase;
   font-size: 0.875rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `;
