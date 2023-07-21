@@ -11,9 +11,9 @@ export interface SongI {
 }
 
 const mockedSong: SongI = {
-  id: 1,
-  name: 'Song name',
-  artist: 'Artist name',
+  id: 0,
+  name: '',
+  artist: '',
   likes: 0,
   audio: '',
   img: '',
