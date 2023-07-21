@@ -41,7 +41,7 @@ const NowPlaying = () => {
           <span>- {currentSong.name}</span>
         </div>
       </CurrentSong>
-      <audio controls ref={audioRef}>
+      <audio controls ref={audioRef} data-testid="audio-element">
         <source src={`/public/assets/audio/${currentSong.audio}`} type="audio/mpeg" />
       </audio>
     </NowPlayingBox>
